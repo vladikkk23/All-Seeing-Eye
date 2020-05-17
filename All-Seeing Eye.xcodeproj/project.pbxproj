@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61741291243E060300A3063E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61741290243E060300A3063E /* AppDelegate.swift */; };
-		61741293243E060300A3063E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61741292243E060300A3063E /* SceneDelegate.swift */; };
-		61741296243E060300A3063E /* All_Seeing_Eye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61741294243E060300A3063E /* All_Seeing_Eye.xcdatamodeld */; };
-		61741298243E060400A3063E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61741297243E060400A3063E /* ContentView.swift */; };
-		6174129A243E060700A3063E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61741299243E060700A3063E /* Assets.xcassets */; };
-		6174129D243E060700A3063E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6174129C243E060700A3063E /* Preview Assets.xcassets */; };
-		617412A0243E060700A3063E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6174129E243E060700A3063E /* LaunchScreen.storyboard */; };
-		617412AB243E060800A3063E /* All_Seeing_EyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617412AA243E060800A3063E /* All_Seeing_EyeTests.swift */; };
-		617412B6243E060800A3063E /* All_Seeing_EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617412B5243E060800A3063E /* All_Seeing_EyeUITests.swift */; };
+		618C50492471A16400639054 /* All_Seeing_EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50322471A16400639054 /* All_Seeing_EyeUITests.swift */; };
+		618C504A2471A16400639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50332471A16400639054 /* Info.plist */; };
+		618C504B2471A16400639054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618C50352471A16400639054 /* Assets.xcassets */; };
+		618C504C2471A16400639054 /* All_Seeing_Eye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 618C50362471A16400639054 /* All_Seeing_Eye.xcdatamodeld */; };
+		618C504D2471A16400639054 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618C50392471A16400639054 /* Preview Assets.xcassets */; };
+		618C504E2471A16400639054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618C503A2471A16400639054 /* LaunchScreen.storyboard */; };
+		618C504F2471A16400639054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C503D2471A16400639054 /* AppDelegate.swift */; };
+		618C50502471A16400639054 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C503E2471A16400639054 /* SceneDelegate.swift */; };
+		618C50512471A16400639054 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50402471A16400639054 /* CameraView.swift */; };
+		618C50522471A16400639054 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50412471A16400639054 /* ContentView.swift */; };
+		618C50532471A16400639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50422471A16400639054 /* Info.plist */; };
+		618C50542471A16400639054 /* Object_Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50442471A16400639054 /* Object_Detector.swift */; };
+		618C50552471A16400639054 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 618C50452471A16400639054 /* README.md */; };
+		618C50562471A16400639054 /* All_Seeing_EyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50472471A16400639054 /* All_Seeing_EyeTests.swift */; };
+		618C50572471A16400639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50482471A16400639054 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +43,23 @@
 
 /* Begin PBXFileReference section */
 		6174128D243E060300A3063E /* All-Seeing Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All-Seeing Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		61741290243E060300A3063E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61741292243E060300A3063E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61741295243E060300A3063E /* All_Seeing_Eye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = All_Seeing_Eye.xcdatamodel; sourceTree = "<group>"; };
-		61741297243E060400A3063E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		61741299243E060700A3063E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6174129C243E060700A3063E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6174129F243E060700A3063E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		617412A1243E060700A3063E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617412A6243E060800A3063E /* All-Seeing EyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "All-Seeing EyeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		617412AA243E060800A3063E /* All_Seeing_EyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeTests.swift; sourceTree = "<group>"; };
-		617412AC243E060800A3063E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617412B1243E060800A3063E /* All-Seeing EyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "All-Seeing EyeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		617412B5243E060800A3063E /* All_Seeing_EyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeUITests.swift; sourceTree = "<group>"; };
-		617412B7243E060800A3063E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618C50322471A16400639054 /* All_Seeing_EyeUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeUITests.swift; sourceTree = "<group>"; };
+		618C50332471A16400639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618C50352471A16400639054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		618C50372471A16400639054 /* All_Seeing_Eye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = All_Seeing_Eye.xcdatamodel; sourceTree = "<group>"; };
+		618C50392471A16400639054 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		618C503B2471A16400639054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		618C503D2471A16400639054 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		618C503E2471A16400639054 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		618C50402471A16400639054 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		618C50412471A16400639054 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		618C50422471A16400639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618C50442471A16400639054 /* Object_Detector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object_Detector.swift; sourceTree = "<group>"; };
+		618C50452471A16400639054 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		618C50472471A16400639054 /* All_Seeing_EyeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeTests.swift; sourceTree = "<group>"; };
+		618C50482471A16400639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +90,10 @@
 		61741284243E060300A3063E = {
 			isa = PBXGroup;
 			children = (
-				6174128F243E060300A3063E /* All-Seeing Eye */,
-				617412A9243E060800A3063E /* All-Seeing EyeTests */,
-				617412B4243E060800A3063E /* All-Seeing EyeUITests */,
+				618C50342471A16400639054 /* All-Seeing Eye */,
+				618C50462471A16400639054 /* All-Seeing EyeTests */,
+				618C50312471A16400639054 /* All-Seeing EyeUITests */,
+				618C50452471A16400639054 /* README.md */,
 				6174128E243E060300A3063E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,45 +108,71 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6174128F243E060300A3063E /* All-Seeing Eye */ = {
+		618C50312471A16400639054 /* All-Seeing EyeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				61741290243E060300A3063E /* AppDelegate.swift */,
-				61741292243E060300A3063E /* SceneDelegate.swift */,
-				61741297243E060400A3063E /* ContentView.swift */,
-				61741299243E060700A3063E /* Assets.xcassets */,
-				6174129E243E060700A3063E /* LaunchScreen.storyboard */,
-				617412A1243E060700A3063E /* Info.plist */,
-				61741294243E060300A3063E /* All_Seeing_Eye.xcdatamodeld */,
-				6174129B243E060700A3063E /* Preview Content */,
+				618C50322471A16400639054 /* All_Seeing_EyeUITests.swift */,
+				618C50332471A16400639054 /* Info.plist */,
+			);
+			path = "All-Seeing EyeUITests";
+			sourceTree = "<group>";
+		};
+		618C50342471A16400639054 /* All-Seeing Eye */ = {
+			isa = PBXGroup;
+			children = (
+				618C50432471A16400639054 /* Object-Detector */,
+				618C503C2471A16400639054 /* Delegates */,
+				618C503F2471A16400639054 /* Views */,
+				618C50352471A16400639054 /* Assets.xcassets */,
+				618C50382471A16400639054 /* Preview Content */,
+				618C503A2471A16400639054 /* LaunchScreen.storyboard */,
+				618C50422471A16400639054 /* Info.plist */,
+				618C50362471A16400639054 /* All_Seeing_Eye.xcdatamodeld */,
 			);
 			path = "All-Seeing Eye";
 			sourceTree = "<group>";
 		};
-		6174129B243E060700A3063E /* Preview Content */ = {
+		618C50382471A16400639054 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				6174129C243E060700A3063E /* Preview Assets.xcassets */,
+				618C50392471A16400639054 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		617412A9243E060800A3063E /* All-Seeing EyeTests */ = {
+		618C503C2471A16400639054 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				617412AA243E060800A3063E /* All_Seeing_EyeTests.swift */,
-				617412AC243E060800A3063E /* Info.plist */,
+				618C503D2471A16400639054 /* AppDelegate.swift */,
+				618C503E2471A16400639054 /* SceneDelegate.swift */,
 			);
-			path = "All-Seeing EyeTests";
+			path = Delegates;
 			sourceTree = "<group>";
 		};
-		617412B4243E060800A3063E /* All-Seeing EyeUITests */ = {
+		618C503F2471A16400639054 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				617412B5243E060800A3063E /* All_Seeing_EyeUITests.swift */,
-				617412B7243E060800A3063E /* Info.plist */,
+				618C50402471A16400639054 /* CameraView.swift */,
+				618C50412471A16400639054 /* ContentView.swift */,
 			);
-			path = "All-Seeing EyeUITests";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		618C50432471A16400639054 /* Object-Detector */ = {
+			isa = PBXGroup;
+			children = (
+				618C50442471A16400639054 /* Object_Detector.swift */,
+			);
+			path = "Object-Detector";
+			sourceTree = "<group>";
+		};
+		618C50462471A16400639054 /* All-Seeing EyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				618C50472471A16400639054 /* All_Seeing_EyeTests.swift */,
+				618C50482471A16400639054 /* Info.plist */,
+			);
+			path = "All-Seeing EyeTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +279,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617412A0243E060700A3063E /* LaunchScreen.storyboard in Resources */,
-				6174129D243E060700A3063E /* Preview Assets.xcassets in Resources */,
-				6174129A243E060700A3063E /* Assets.xcassets in Resources */,
+				618C50552471A16400639054 /* README.md in Resources */,
+				618C504B2471A16400639054 /* Assets.xcassets in Resources */,
+				618C504E2471A16400639054 /* LaunchScreen.storyboard in Resources */,
+				618C504D2471A16400639054 /* Preview Assets.xcassets in Resources */,
+				618C50532471A16400639054 /* Info.plist in Resources */,
+				618C504A2471A16400639054 /* Info.plist in Resources */,
+				618C50572471A16400639054 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61741291243E060300A3063E /* AppDelegate.swift in Sources */,
-				61741293243E060300A3063E /* SceneDelegate.swift in Sources */,
-				61741298243E060400A3063E /* ContentView.swift in Sources */,
-				61741296243E060300A3063E /* All_Seeing_Eye.xcdatamodeld in Sources */,
+				618C504F2471A16400639054 /* AppDelegate.swift in Sources */,
+				618C504C2471A16400639054 /* All_Seeing_Eye.xcdatamodeld in Sources */,
+				618C50522471A16400639054 /* ContentView.swift in Sources */,
+				618C50542471A16400639054 /* Object_Detector.swift in Sources */,
+				618C50562471A16400639054 /* All_Seeing_EyeTests.swift in Sources */,
+				618C50492471A16400639054 /* All_Seeing_EyeUITests.swift in Sources */,
+				618C50512471A16400639054 /* CameraView.swift in Sources */,
+				618C50502471A16400639054 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617412AB243E060800A3063E /* All_Seeing_EyeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617412B6243E060800A3063E /* All_Seeing_EyeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,10 +351,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6174129E243E060700A3063E /* LaunchScreen.storyboard */ = {
+		618C503A2471A16400639054 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6174129F243E060700A3063E /* Base */,
+				618C503B2471A16400639054 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -600,12 +642,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		61741294243E060300A3063E /* All_Seeing_Eye.xcdatamodeld */ = {
+		618C50362471A16400639054 /* All_Seeing_Eye.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				61741295243E060300A3063E /* All_Seeing_Eye.xcdatamodel */,
+				618C50372471A16400639054 /* All_Seeing_Eye.xcdatamodel */,
 			);
-			currentVersion = 61741295243E060300A3063E /* All_Seeing_Eye.xcdatamodel */;
+			currentVersion = 618C50372471A16400639054 /* All_Seeing_Eye.xcdatamodel */;
 			path = All_Seeing_Eye.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
