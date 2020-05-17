@@ -2,12 +2,11 @@
 //  All_Seeing_EyeTests.swift
 //  All-Seeing EyeTests
 //
-//  Created by vladikkk on 08/04/2020.
+//  Created by vladikkk on 17/05/2020.
 //  Copyright © 2020 TMPS. All rights reserved.
 //
 
 import XCTest
-@testable import All_Seeing_Eye
 
 class All_Seeing_EyeTests: XCTestCase {
 
@@ -26,7 +25,7 @@ class All_Seeing_EyeTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
