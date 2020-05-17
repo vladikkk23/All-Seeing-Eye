@@ -10,7 +10,6 @@ import SwiftUI
 import AVFoundation
 import Vision
 
-// Need UIViewControllerRepresentable to show any UIViewController in SwiftUI
 struct CameraView : UIViewControllerRepresentable {
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<CameraView>) -> UIViewController {
@@ -22,11 +21,12 @@ struct CameraView : UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: CameraView.UIViewControllerType, context: UIViewControllerRepresentableContext<CameraView>) { }
 }
 
-// My custom class which inits an AVSession for the live preview
 class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     var bufferSize: CGSize = .zero
     var rootLayer: CALayer! = nil
+    
+    private var detectionOverlay: CALayer! = nil
     
     private let session = AVCaptureSession()
     private let videoDataOutput = AVCaptureVideoDataOutput()
@@ -41,6 +41,9 @@ class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBuf
         super.viewDidLoad()
         
         loadCamera()
+        setupLayers()
+        updateLayerGeometry()
+        
         self.session.startRunning()
     }
     
@@ -55,7 +58,7 @@ class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBuf
         
         // Begin session config
         self.session.beginConfiguration()
-        self.session.sessionPreset = .vga640x480
+        self.session.sessionPreset = .hd1920x1080
         
         guard self.session.canAddInput(videoDeviceInput) else {
             NSLog("Could not add video device input to the session")
@@ -121,9 +124,75 @@ class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBuf
         
         do {
             try requestHandler.perform(self.objectDetector.requests)
+            
+            // Adding bounding box
+            let boundingBox = self.objectDetector.boundingBox
+            let objectType = self.objectDetector.objectType
+            if !boundingBox.isEmpty && objectType != nil {
+                DispatchQueue.main.async {
+                    CATransaction.begin()
+                    CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+                    self.detectionOverlay.sublayers = nil
+                                        
+                    let objectBounds = VNImageRectForNormalizedRect(boundingBox, Int(self.bufferSize.width), Int(self.bufferSize.height))
+                    
+                    let shapeLayer = self.createBoundingBox(forObjectType: objectType!, withBounds: objectBounds)
+                    
+                    self.detectionOverlay.addSublayer(shapeLayer)
+                    
+                    self.updateLayerGeometry()
+                    CATransaction.commit()
+                }
+            }
         } catch {
             NSLog("Error: Unable to perform requests")
         }
+    }
+    
+    func createBoundingBox(forObjectType type: ObservationTypeEnum, withBounds bounds: CGRect) -> CALayer {
+        let shapeLayer = CALayer()
+        let borderColor = type.getColor()
+        
+        shapeLayer.bounds = bounds
+        shapeLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
+        shapeLayer.name = "Found Object"
+        shapeLayer.borderColor = borderColor
+        shapeLayer.borderWidth = 2.5
+        shapeLayer.cornerRadius = 5.0
+        
+        return shapeLayer
+    }
+    
+    func setupLayers() {
+        detectionOverlay = CALayer()
+        detectionOverlay.name = "DetectionOverlay"
+        detectionOverlay.bounds = CGRect(x: 0.0, y: 0.0, width: bufferSize.width, height: bufferSize.height)
+        detectionOverlay.position = CGPoint(x: rootLayer.bounds.midX, y: rootLayer.bounds.midY)
+        rootLayer.addSublayer(detectionOverlay)
+    }
+    
+    func updateLayerGeometry() {
+        let bounds = rootLayer.bounds
+        var scale: CGFloat
+        
+        let xScale: CGFloat = bounds.size.width / bufferSize.height
+        let yScale: CGFloat = bounds.size.height / bufferSize.width
+        
+        scale = fmax(xScale, yScale)
+        if scale.isInfinite {
+            scale = 1.0
+        }
+        
+        CATransaction.begin()
+        CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+        
+        // Rotate the layer into screen orientation and scale and mirror
+        detectionOverlay.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(.pi / 2.0)).scaledBy(x: scale, y: -scale))
+        
+        // Center the layer
+        detectionOverlay.position = CGPoint(x: bounds.midX, y: bounds.midY)
+        
+        CATransaction.commit()
     }
     
     // Specify device orientation

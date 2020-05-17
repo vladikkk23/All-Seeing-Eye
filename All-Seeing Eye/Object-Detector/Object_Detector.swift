@@ -15,6 +15,9 @@ class Object_Detector {
     // MARK: Properties
     var requests = [VNRequest]()
     
+    var boundingBox = CGRect()
+    var objectType: ObservationTypeEnum?
+    
     init(modelWithName modelName: String) {
         self.setupModel(withFilename: modelName)
     }
@@ -54,6 +57,9 @@ class Object_Detector {
             guard let firstResults = results.first else { return }
             
             print(firstResults.labels.first!.identifier, firstResults.labels.first!.confidence.description)
+            
+            self.objectType = ObservationTypeEnum(fromRawValue: firstResults.labels.first!.identifier)
+            self.boundingBox = firstResults.boundingBox
         }
         
         // Save requests
