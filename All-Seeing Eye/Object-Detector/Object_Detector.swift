@@ -17,6 +17,7 @@ class Object_Detector {
     
     var boundingBox = CGRect()
     var objectType: ObservationTypeEnum?
+    var firstObservation = VNRecognizedObjectObservation()
     
     init(modelWithName modelName: String) {
         self.setupModel(withFilename: modelName)
@@ -54,12 +55,11 @@ class Object_Detector {
             }
             
             // Get first observation result (one with the greatest confidence)
-            guard let firstResults = results.first else { return }
+            guard let firstResult = results.first else { return }
             
-            print(firstResults.labels.first!.identifier, firstResults.labels.first!.confidence.description)
-            
-            self.objectType = ObservationTypeEnum(fromRawValue: firstResults.labels.first!.identifier)
-            self.boundingBox = firstResults.boundingBox
+            self.firstObservation = firstResult
+            self.objectType = ObservationTypeEnum(fromRawValue: firstResult.labels.first!.identifier)
+            self.boundingBox = firstResult.boundingBox
         }
         
         // Save requests

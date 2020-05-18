@@ -128,16 +128,20 @@ class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBuf
             // Adding bounding box
             let boundingBox = self.objectDetector.boundingBox
             let objectType = self.objectDetector.objectType
+            
             if !boundingBox.isEmpty && objectType != nil {
                 DispatchQueue.main.async {
                     CATransaction.begin()
                     CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
                     self.detectionOverlay.sublayers = nil
-                                        
+                    
                     let objectBounds = VNImageRectForNormalizedRect(boundingBox, Int(self.bufferSize.width), Int(self.bufferSize.height))
                     
-                    let shapeLayer = self.createBoundingBox(forObjectType: objectType!, withBounds: objectBounds)
+                    let shapeLayer = self.createBoundingBox(withBounds: objectBounds)
                     
+                    let textLayer = self.createTextBox(withBounds: objectBounds)
+                    
+                    shapeLayer.addSublayer(textLayer)
                     self.detectionOverlay.addSublayer(shapeLayer)
                     
                     self.updateLayerGeometry()
@@ -149,9 +153,9 @@ class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBuf
         }
     }
     
-    func createBoundingBox(forObjectType type: ObservationTypeEnum, withBounds bounds: CGRect) -> CALayer {
+    func createBoundingBox(withBounds bounds: CGRect) -> CALayer {
         let shapeLayer = CALayer()
-        let borderColor = type.getColor()
+        let borderColor = self.objectDetector.objectType?.getColor()
         
         shapeLayer.bounds = bounds
         shapeLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
@@ -161,6 +165,26 @@ class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBuf
         shapeLayer.cornerRadius = 5.0
         
         return shapeLayer
+    }
+    
+    func createTextBox(withBounds bounds: CGRect) -> CATextLayer {
+        let textLayer = CATextLayer()
+        textLayer.name = "Object Label"
+        let formattedString = NSMutableAttributedString(string: String(format: "\(self.objectDetector.firstObservation.labels[0].identifier)"))
+        let backgroundColor = UIColor(cgColor: self.objectDetector.objectType!.getColor())
+        let largeFont = UIFont(name: "AvenirNext-Medium", size: 40.0)!
+        
+        formattedString.addAttributes([NSAttributedString.Key.font: largeFont, NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.backgroundColor: backgroundColor], range: NSRange(location: 0, length: self.objectDetector.firstObservation.labels[0].identifier.count))
+        
+        textLayer.string = formattedString
+        textLayer.bounds = CGRect(x: 0, y: 0, width: bounds.size.height, height: 50)
+        textLayer.position = CGPoint(x: bounds.minX - 25, y: bounds.maxY)
+        textLayer.contentsScale = 2.0
+        textLayer.cornerRadius = 5.0
+        
+        textLayer.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(.pi / 2.0)).scaledBy(x: 1.0, y: -1.0))
+        
+        return textLayer
     }
     
     func setupLayers() {
