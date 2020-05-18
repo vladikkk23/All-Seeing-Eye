@@ -171,16 +171,14 @@ class CameraViewController : UIViewController, AVCaptureVideoDataOutputSampleBuf
         let textLayer = CATextLayer()
         textLayer.name = "Object Label"
         let formattedString = NSMutableAttributedString(string: String(format: "\(self.objectDetector.firstObservation.labels[0].identifier)"))
-        let backgroundColor = self.objectDetector.objectType?.getColor()
+        let backgroundColor = UIColor(cgColor: self.objectDetector.objectType!.getColor())
         let largeFont = UIFont(name: "AvenirNext-Medium", size: 40.0)!
         
-        formattedString.addAttributes([NSAttributedString.Key.font: largeFont, NSAttributedString.Key.foregroundColor: UIColor.white], range: NSRange(location: 0, length: self.objectDetector.firstObservation.labels[0].identifier.count))
+        formattedString.addAttributes([NSAttributedString.Key.font: largeFont, NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.backgroundColor: backgroundColor], range: NSRange(location: 0, length: self.objectDetector.firstObservation.labels[0].identifier.count))
         
         textLayer.string = formattedString
         textLayer.bounds = CGRect(x: 0, y: 0, width: bounds.size.height, height: 50)
         textLayer.position = CGPoint(x: bounds.minX - 25, y: bounds.maxY)
-        textLayer.foregroundColor = CGColor(srgbRed: 255, green: 255, blue: 255, alpha: 1)
-        textLayer.backgroundColor = backgroundColor
         textLayer.contentsScale = 2.0
         textLayer.cornerRadius = 5.0
         
