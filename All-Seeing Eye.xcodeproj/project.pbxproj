@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		618C50492471A16400639054 /* All_Seeing_EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50322471A16400639054 /* All_Seeing_EyeUITests.swift */; };
-		618C504A2471A16400639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50332471A16400639054 /* Info.plist */; };
 		618C504B2471A16400639054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618C50352471A16400639054 /* Assets.xcassets */; };
 		618C504C2471A16400639054 /* All_Seeing_Eye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 618C50362471A16400639054 /* All_Seeing_Eye.xcdatamodeld */; };
 		618C504D2471A16400639054 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618C50392471A16400639054 /* Preview Assets.xcassets */; };
@@ -17,22 +15,25 @@
 		618C50502471A16400639054 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C503E2471A16400639054 /* SceneDelegate.swift */; };
 		618C50512471A16400639054 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50402471A16400639054 /* CameraView.swift */; };
 		618C50522471A16400639054 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50412471A16400639054 /* ContentView.swift */; };
-		618C50532471A16400639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50422471A16400639054 /* Info.plist */; };
 		618C50542471A16400639054 /* Object_Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50442471A16400639054 /* Object_Detector.swift */; };
 		618C50552471A16400639054 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 618C50452471A16400639054 /* README.md */; };
-		618C50562471A16400639054 /* All_Seeing_EyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50472471A16400639054 /* All_Seeing_EyeTests.swift */; };
-		618C50572471A16400639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50482471A16400639054 /* Info.plist */; };
+		618C50852471A61400639054 /* All_Seeing_EyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50832471A61400639054 /* All_Seeing_EyeTests.swift */; };
+		618C50862471A61400639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50842471A61400639054 /* Info.plist */; };
+		618C508A2471A66800639054 /* All_Seeing_EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C50882471A66800639054 /* All_Seeing_EyeUITests.swift */; };
+		618C508B2471A66800639054 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618C50892471A66800639054 /* Info.plist */; };
+		618C508D2471A81A00639054 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 618C508C2471A81A00639054 /* YOLOv3.mlmodel */; };
+		61945C542471F13C0048EFCA /* ObjectTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61945C532471F13C0048EFCA /* ObjectTypeEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		617412A7243E060800A3063E /* PBXContainerItemProxy */ = {
+		618C506F2471A53300639054 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 61741285243E060300A3063E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6174128C243E060300A3063E;
 			remoteInfo = "All-Seeing Eye";
 		};
-		617412B2243E060800A3063E /* PBXContainerItemProxy */ = {
+		618C507D2471A53E00639054 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 61741285243E060300A3063E /* Project object */;
 			proxyType = 1;
@@ -43,10 +44,6 @@
 
 /* Begin PBXFileReference section */
 		6174128D243E060300A3063E /* All-Seeing Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All-Seeing Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		617412A6243E060800A3063E /* All-Seeing EyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "All-Seeing EyeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		617412B1243E060800A3063E /* All-Seeing EyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "All-Seeing EyeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		618C50322471A16400639054 /* All_Seeing_EyeUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeUITests.swift; sourceTree = "<group>"; };
-		618C50332471A16400639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		618C50352471A16400639054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		618C50372471A16400639054 /* All_Seeing_Eye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = All_Seeing_Eye.xcdatamodel; sourceTree = "<group>"; };
 		618C50392471A16400639054 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -58,8 +55,14 @@
 		618C50422471A16400639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		618C50442471A16400639054 /* Object_Detector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object_Detector.swift; sourceTree = "<group>"; };
 		618C50452471A16400639054 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		618C50472471A16400639054 /* All_Seeing_EyeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeTests.swift; sourceTree = "<group>"; };
-		618C50482471A16400639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618C506A2471A53300639054 /* All-Seeing EyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "All-Seeing EyeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		618C50782471A53E00639054 /* All-Seeing EyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "All-Seeing EyeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		618C50832471A61400639054 /* All_Seeing_EyeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeTests.swift; sourceTree = "<group>"; };
+		618C50842471A61400639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618C50882471A66800639054 /* All_Seeing_EyeUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Seeing_EyeUITests.swift; sourceTree = "<group>"; };
+		618C50892471A66800639054 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618C508C2471A81A00639054 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
+		61945C532471F13C0048EFCA /* ObjectTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTypeEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +73,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617412A3243E060800A3063E /* Frameworks */ = {
+		618C50672471A53300639054 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617412AE243E060800A3063E /* Frameworks */ = {
+		618C50752471A53E00639054 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,9 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				618C50342471A16400639054 /* All-Seeing Eye */,
-				618C50462471A16400639054 /* All-Seeing EyeTests */,
-				618C50312471A16400639054 /* All-Seeing EyeUITests */,
+				618C508C2471A81A00639054 /* YOLOv3.mlmodel */,
 				618C50452471A16400639054 /* README.md */,
+				618C50822471A61400639054 /* All-Seeing EyeTests */,
+				618C50872471A66800639054 /* All-Seeing EyeUITests */,
 				6174128E243E060300A3063E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,19 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				6174128D243E060300A3063E /* All-Seeing Eye.app */,
-				617412A6243E060800A3063E /* All-Seeing EyeTests.xctest */,
-				617412B1243E060800A3063E /* All-Seeing EyeUITests.xctest */,
+				618C506A2471A53300639054 /* All-Seeing EyeTests.xctest */,
+				618C50782471A53E00639054 /* All-Seeing EyeUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		618C50312471A16400639054 /* All-Seeing EyeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				618C50322471A16400639054 /* All_Seeing_EyeUITests.swift */,
-				618C50332471A16400639054 /* Info.plist */,
-			);
-			path = "All-Seeing EyeUITests";
 			sourceTree = "<group>";
 		};
 		618C50342471A16400639054 /* All-Seeing Eye */ = {
@@ -161,18 +156,36 @@
 		618C50432471A16400639054 /* Object-Detector */ = {
 			isa = PBXGroup;
 			children = (
+				61945C522471F12A0048EFCA /* Enums */,
 				618C50442471A16400639054 /* Object_Detector.swift */,
 			);
 			path = "Object-Detector";
 			sourceTree = "<group>";
 		};
-		618C50462471A16400639054 /* All-Seeing EyeTests */ = {
+		618C50822471A61400639054 /* All-Seeing EyeTests */ = {
 			isa = PBXGroup;
 			children = (
-				618C50472471A16400639054 /* All_Seeing_EyeTests.swift */,
-				618C50482471A16400639054 /* Info.plist */,
+				618C50832471A61400639054 /* All_Seeing_EyeTests.swift */,
+				618C50842471A61400639054 /* Info.plist */,
 			);
 			path = "All-Seeing EyeTests";
+			sourceTree = "<group>";
+		};
+		618C50872471A66800639054 /* All-Seeing EyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				618C50882471A66800639054 /* All_Seeing_EyeUITests.swift */,
+				618C50892471A66800639054 /* Info.plist */,
+			);
+			path = "All-Seeing EyeUITests";
+			sourceTree = "<group>";
+		};
+		61945C522471F12A0048EFCA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				61945C532471F13C0048EFCA /* ObjectTypeEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,40 +208,40 @@
 			productReference = 6174128D243E060300A3063E /* All-Seeing Eye.app */;
 			productType = "com.apple.product-type.application";
 		};
-		617412A5243E060800A3063E /* All-Seeing EyeTests */ = {
+		618C50692471A53300639054 /* All-Seeing EyeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 617412BD243E060800A3063E /* Build configuration list for PBXNativeTarget "All-Seeing EyeTests" */;
+			buildConfigurationList = 618C50712471A53300639054 /* Build configuration list for PBXNativeTarget "All-Seeing EyeTests" */;
 			buildPhases = (
-				617412A2243E060800A3063E /* Sources */,
-				617412A3243E060800A3063E /* Frameworks */,
-				617412A4243E060800A3063E /* Resources */,
+				618C50662471A53300639054 /* Sources */,
+				618C50672471A53300639054 /* Frameworks */,
+				618C50682471A53300639054 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				617412A8243E060800A3063E /* PBXTargetDependency */,
+				618C50702471A53300639054 /* PBXTargetDependency */,
 			);
 			name = "All-Seeing EyeTests";
 			productName = "All-Seeing EyeTests";
-			productReference = 617412A6243E060800A3063E /* All-Seeing EyeTests.xctest */;
+			productReference = 618C506A2471A53300639054 /* All-Seeing EyeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		617412B0243E060800A3063E /* All-Seeing EyeUITests */ = {
+		618C50772471A53E00639054 /* All-Seeing EyeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 617412C0243E060800A3063E /* Build configuration list for PBXNativeTarget "All-Seeing EyeUITests" */;
+			buildConfigurationList = 618C507F2471A53E00639054 /* Build configuration list for PBXNativeTarget "All-Seeing EyeUITests" */;
 			buildPhases = (
-				617412AD243E060800A3063E /* Sources */,
-				617412AE243E060800A3063E /* Frameworks */,
-				617412AF243E060800A3063E /* Resources */,
+				618C50742471A53E00639054 /* Sources */,
+				618C50752471A53E00639054 /* Frameworks */,
+				618C50762471A53E00639054 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				617412B3243E060800A3063E /* PBXTargetDependency */,
+				618C507E2471A53E00639054 /* PBXTargetDependency */,
 			);
 			name = "All-Seeing EyeUITests";
 			productName = "All-Seeing EyeUITests";
-			productReference = 617412B1243E060800A3063E /* All-Seeing EyeUITests.xctest */;
+			productReference = 618C50782471A53E00639054 /* All-Seeing EyeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -244,11 +257,11 @@
 					6174128C243E060300A3063E = {
 						CreatedOnToolsVersion = 11.4;
 					};
-					617412A5243E060800A3063E = {
+					618C50692471A53300639054 = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 6174128C243E060300A3063E;
 					};
-					617412B0243E060800A3063E = {
+					618C50772471A53E00639054 = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 6174128C243E060300A3063E;
 					};
@@ -268,8 +281,8 @@
 			projectRoot = "";
 			targets = (
 				6174128C243E060300A3063E /* All-Seeing Eye */,
-				617412A5243E060800A3063E /* All-Seeing EyeTests */,
-				617412B0243E060800A3063E /* All-Seeing EyeUITests */,
+				618C50692471A53300639054 /* All-Seeing EyeTests */,
+				618C50772471A53E00639054 /* All-Seeing EyeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,23 +296,22 @@
 				618C504B2471A16400639054 /* Assets.xcassets in Resources */,
 				618C504E2471A16400639054 /* LaunchScreen.storyboard in Resources */,
 				618C504D2471A16400639054 /* Preview Assets.xcassets in Resources */,
-				618C50532471A16400639054 /* Info.plist in Resources */,
-				618C504A2471A16400639054 /* Info.plist in Resources */,
-				618C50572471A16400639054 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617412A4243E060800A3063E /* Resources */ = {
+		618C50682471A53300639054 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618C50862471A61400639054 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617412AF243E060800A3063E /* Resources */ = {
+		618C50762471A53E00639054 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618C508B2471A66800639054 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,41 +324,43 @@
 			files = (
 				618C504F2471A16400639054 /* AppDelegate.swift in Sources */,
 				618C504C2471A16400639054 /* All_Seeing_Eye.xcdatamodeld in Sources */,
+				618C508D2471A81A00639054 /* YOLOv3.mlmodel in Sources */,
 				618C50522471A16400639054 /* ContentView.swift in Sources */,
 				618C50542471A16400639054 /* Object_Detector.swift in Sources */,
-				618C50562471A16400639054 /* All_Seeing_EyeTests.swift in Sources */,
-				618C50492471A16400639054 /* All_Seeing_EyeUITests.swift in Sources */,
+				61945C542471F13C0048EFCA /* ObjectTypeEnum.swift in Sources */,
 				618C50512471A16400639054 /* CameraView.swift in Sources */,
 				618C50502471A16400639054 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617412A2243E060800A3063E /* Sources */ = {
+		618C50662471A53300639054 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618C50852471A61400639054 /* All_Seeing_EyeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		617412AD243E060800A3063E /* Sources */ = {
+		618C50742471A53E00639054 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618C508A2471A66800639054 /* All_Seeing_EyeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		617412A8243E060800A3063E /* PBXTargetDependency */ = {
+		618C50702471A53300639054 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6174128C243E060300A3063E /* All-Seeing Eye */;
-			targetProxy = 617412A7243E060800A3063E /* PBXContainerItemProxy */;
+			targetProxy = 618C506F2471A53300639054 /* PBXContainerItemProxy */;
 		};
-		617412B3243E060800A3063E /* PBXTargetDependency */ = {
+		618C507E2471A53E00639054 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6174128C243E060300A3063E /* All-Seeing Eye */;
-			targetProxy = 617412B2243E060800A3063E /* PBXContainerItemProxy */;
+			targetProxy = 618C507D2471A53E00639054 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,21 +530,19 @@
 			};
 			name = Release;
 		};
-		617412BE243E060800A3063E /* Debug */ = {
+		618C50722471A53300639054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZFBRS23ZM;
 				INFOPLIST_FILE = "All-Seeing EyeTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SwiftUI.All-Seeing-EyeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "MOV.All-Seeing-EyeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -538,21 +550,19 @@
 			};
 			name = Debug;
 		};
-		617412BF243E060800A3063E /* Release */ = {
+		618C50732471A53300639054 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZFBRS23ZM;
 				INFOPLIST_FILE = "All-Seeing EyeTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SwiftUI.All-Seeing-EyeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "MOV.All-Seeing-EyeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,10 +570,9 @@
 			};
 			name = Release;
 		};
-		617412C1243E060800A3063E /* Debug */ = {
+		618C50802471A53E00639054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZFBRS23ZM;
 				INFOPLIST_FILE = "All-Seeing EyeUITests/Info.plist";
@@ -572,7 +581,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SwiftUI.All-Seeing-EyeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "MOV.All-Seeing-EyeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,10 +589,9 @@
 			};
 			name = Debug;
 		};
-		617412C2243E060800A3063E /* Release */ = {
+		618C50812471A53E00639054 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZFBRS23ZM;
 				INFOPLIST_FILE = "All-Seeing EyeUITests/Info.plist";
@@ -592,7 +600,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SwiftUI.All-Seeing-EyeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "MOV.All-Seeing-EyeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -621,20 +629,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		617412BD243E060800A3063E /* Build configuration list for PBXNativeTarget "All-Seeing EyeTests" */ = {
+		618C50712471A53300639054 /* Build configuration list for PBXNativeTarget "All-Seeing EyeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				617412BE243E060800A3063E /* Debug */,
-				617412BF243E060800A3063E /* Release */,
+				618C50722471A53300639054 /* Debug */,
+				618C50732471A53300639054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		617412C0243E060800A3063E /* Build configuration list for PBXNativeTarget "All-Seeing EyeUITests" */ = {
+		618C507F2471A53E00639054 /* Build configuration list for PBXNativeTarget "All-Seeing EyeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				617412C1243E060800A3063E /* Debug */,
-				617412C2243E060800A3063E /* Release */,
+				618C50802471A53E00639054 /* Debug */,
+				618C50812471A53E00639054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
